@@ -1,19 +1,33 @@
-Declare,metatab-latest,,,,,,,
-Title,California Physical Fitness Test  Research Data,,,,,,,
-Description,"These research files contain results from the Physical Fitness Test (PFT) program. Each file contains the same information presented in the Reports section of this site and is provided to allow for more complex analyses and customized reporting of the data. The data files, including file layout, entities, and subgroup files, are comma-delimited text files provided in a zip format.",,,,,,,
-Identifier,48bb7772-1641-4e71-83bd-13f8ecca5255,,,,,,,
-Name,cde.ca.gov-fitnessgram-1999e-ca-3,,,,,,,
-Group,health,,,,,,,
-Group,education,,,,,,,
-Tag,healthy-food-access,,,,,,,
-Grain,,,,,,,,
-Origin,cde.ca.gov,,,,,,,
-Dataset,fitnessgram,,,,,,,
-Version,3,,,,,,,
-Space,CA,,,,,,,
-Time,1999e,,,,,,,
-Version,1,,,,,,,
-,,,,,,,,
+Declare,metatab-latest
+Title,California Physical Fitness Test  Research Data
+Description,These research files contain results from the Physical Fitness Test (PFT)
+Description,program. Each file contains the same information presented in the Reports
+Description,section of this site and is provided to allow for more complex analyses and
+Description,"customized reporting of the data. The data files, including file layout,"
+Description,"entities, and subgroup files, are comma-delimited text files provided in a zip"
+Description,format.
+Identifier,48bb7772-1641-4e71-83bd-13f8ecca5255
+Name,cde.ca.gov-fitnessgram-1999e-ca-1.3.1
+Dataset,fitnessgram
+Origin,cde.ca.gov
+Time,1999e
+Space,CA
+Grain,
+Version,1.3.1
+Version.Major,1
+Version.Minor,3
+Version.Patch,1
+Version,1
+Group,health
+Group,education
+Tag,healthy-food-access
+Modified,2021-02-25T01:23:05
+Giturl,https://github.com/metatab-packages/cde.ca.gov-fitnessgram-1999e-ca.git
+""
+Section,Contacts,email,organization,web,tel,,,
+Creator,High School and Physical Fitness Assessment Office,pft@cde.ca.gov,California Department of Education,http://www.cde.ca.gov/index.asp,916-445-9449,,,
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com,,,,
+""
 Section,Documentation,Title,Description,,,,,
 Homepage,http://www.cde.ca.gov/ta/tg/pf/,Physical Fitness Testing (PFT),Home page for the PFT program,,,,,
 Downloadpage,http://www.cde.ca.gov/ta/tg/pf/pftresearch.asp,PFT Statewide Research Files,Download page with links to research file archives,,,,,
@@ -35,11 +49,7 @@ Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip#PFT
 Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles15.zip#PFT+Research+File+Layouts+2015.pdf,File Layout 2015,"Text form data dictionary, including common code values",,,,,
 Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles16.zip#PFT+Research+File+Layouts+2016.pdf,File Layout 2016,"Text form data dictionary, including common code values",,,,,
 Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip#PFT+File+Layouts.pdf,File Layout 1999,"Text form data dictionary, including common code values",,,,,
-,,,,,,,,
-Section,Contacts,email,organization,web,tel,,,
-Creator,High School and Physical Fitness Assessment Office,pft@cde.ca.gov,California Department of Education,http://www.cde.ca.gov/index.asp,916-445-9449,,,
-Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com,,,,
-,,,,,,,,
+""
 Section,Resources,Name,endline,target_format,encoding,Time,Schema,Description
 Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip#Entities.*,entities99,6262,csv,latin1,1999,entities_1999e2002,1999 PFT Entities
 Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles01.zip#Entities.*,entities01,7798,csv,latin1,2001,entities_1999e2002,2001 PFT Entities
@@ -92,7 +102,7 @@ Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles13.zip#Subgroup
 Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip#Subgroups.*,subgroup14,845,csv,,2014,subgroups_2011e,2013-14 Physical Fitness Subgroups
 Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles15.zip#2014_15_Subgroups.txt,subgroup15,,csv,,2015,subgroups_2011e,2014-15 Physical Fitness Subgroups
 Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles16.zip#2015_16_Subgroups.txt,subgroup16,,csv,,2016,subgroups_2011e,2015-16 Physical Fitness Subgroups
-,,,,,,,,
+""
 Section,Schema,DataType,ValueType,Transform,Description,,,
 Table,entities_1999e2002,,,,,,,
 Table.Column,ccode,int,int,,"County code, defined byt the Secretary of state, not FIPS",,,
@@ -102,9 +112,6 @@ Table.Column,cds_code,str,long,,cds_code,,,
 Table.Column,county,str,str,,County,,,
 Table.Column,district,str,str,,District,,,
 Table.Column,school,str,str,,school,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
 Table,entities_2002e2010,,,,,,,
 Table.Column,ccode,int,int,,"County code, defined byt the Secretary of state, not FIPS",,,
 Table.Column,dcode,int,int,,District Code,,,
@@ -114,8 +121,6 @@ Table.Column,cds_code,str,long,,cds_code,,,
 Table.Column,county,str,str,,County,,,
 Table.Column,district,str,str,,District,,,
 Table.Column,school,str,str,,school,,,
-,,,,,,,,
-,,,,,,,,
 Table,entities_2011e,,,,,,,
 Table.Column,ccode,int,d/int,,"County code, defined byt the Secretary of state, not FIPS",,,
 Table.Column,dcode,int,d/int,,dcode,,,
@@ -158,7 +163,6 @@ Table.Column,gr7pctnotin,float,float,^star_is_not_a_number,Gr7PctNotIn,,,
 Table.Column,gr09_stu,int,int,^star_is_not_a_number,Gr09_Stu,,,
 Table.Column,gr9pctin,float,float,^star_is_not_a_number,Gr9PctIn,,,
 Table.Column,gr9pctnotin,float,float,^star_is_not_a_number,Gr9PctNotIn,,,
-,,,,,,,,
 Table,physfit_2002e2010,,,,,,,
 Table.Column,level,int,int,,Level,,,
 Table.Column,subgrp,int,int,,SubGrp,,,
@@ -178,7 +182,6 @@ Table.Column,gr7pctnotin,float,float,^star_is_not_a_number,Gr7PctNotIn,,,
 Table.Column,gr09_stu,int,int,^star_is_not_a_number,Gr09_Stu,,,
 Table.Column,gr9pctin,float,float,^star_is_not_a_number,Gr9PctIn,,,
 Table.Column,gr9pctnotin,float,float,^star_is_not_a_number,Gr9PctNotIn,,,
-,,,,,,,,
 Table,physfit_2011,,,,,,,
 Table.Column,id,int,id,,"Physical Fitness Research, 2010 to 2014",,,
 Table.Column,level_number,int,d/int,,1 = school 2 = district 3 = county 4 = state,,,
@@ -205,7 +208,6 @@ Table.Column,perc9a,float,d/float?,^star_is_not_a_number,Percent of Grade 9 stud
 Table.Column,perc9b,float,d/float?,^star_is_not_a_number,Percent of Grade 9 Students in Needs Improvement,,,
 Table.Column,perc9c,float,d/float?,^star_is_not_a_number,Percent of Grade 9 Students in Needs Improvement – High Risk,,,
 Table.Column,chrtnum,str,d/str,,ChrtNum,,,
-,,,,,,,,
 Table,physfit_2012e,,,,,,,
 Table.Column,level_number,int,d/int,,1 = school 2 = district 3 = county 4 = state,,,
 Table.Column,report_number,int,d/int,,"Codes for  demographic category of values in report: gender, race, ethnicity, etc. See source documentation for codes.",,,
